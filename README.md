@@ -105,7 +105,9 @@ Open in browser:
 ```
 http://localhost:3000
 ```
-
+```
+health-chatbot-production-121e.up.railway.app
+```
 ---
 
 ## 📌 Usage

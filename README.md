@@ -153,17 +153,9 @@ Contributions are welcome!
 fork → create branch → commit → push → pull request
 ```
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**
-
----
-
 ## 👨‍💻 Author
 
-Developed by **Your Name**
+Developed by **Poonam Thakur**
 
 ---
 

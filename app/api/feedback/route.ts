@@ -11,7 +11,7 @@ interface FeedbackRequest {
 export async function POST(request: NextRequest) {
   try {
     // 1️⃣ Get user_id from cookies
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const userId = cookieStore.get("user_id")?.value;
 
     if (!userId) {

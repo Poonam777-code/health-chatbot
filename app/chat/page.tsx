@@ -5,7 +5,7 @@ import HealthDashboard from "@/components/health-dashboard";
 
 export default async function ChatPage() {
   // 1️⃣ Get user_id from cookies
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const userId = cookieStore.get("user_id")?.value;
 
   if (!userId) {

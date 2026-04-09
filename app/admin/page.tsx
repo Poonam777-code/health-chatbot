@@ -5,7 +5,7 @@ import AdminDashboard from "@/components/admin-dashboard"
 
 export default async function HomePage() {
   // 1️⃣ Get user_id from cookies
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const userId = cookieStore.get("user_id")?.value;
 
   if (!userId) {

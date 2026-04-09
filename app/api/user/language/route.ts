@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 export async function GET(request: NextRequest) {
   try {
     // 1️⃣ Get logged-in user from cookies
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const userId = cookieStore.get("user_id")?.value;
 
     if (!userId) {
@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     // 1️⃣ Get logged-in user from cookies
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const userId = cookieStore.get("user_id")?.value;
 
     if (!userId) {
